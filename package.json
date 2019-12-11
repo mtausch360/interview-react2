@@ -1,0 +1,22 @@
+{
+  "name": "interview-react2",
+  "version": "1.0.0",
+  "description": "clock in clock out panel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tausch86/interview-react2.git"
+  },
+  "author": "Mark Tausch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tausch86/interview-react2/issues"
+  },
+  "homepage": "https://github.com/tausch86/interview-react2#readme",
+  "dependencies": {
+    "react": "^16.12.0"
+  }
+}

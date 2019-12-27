@@ -42,8 +42,6 @@ const config = {
   plugins: [
     new HtmlWebPackPlugin({
       title: "development"
-      // template: './app/index.html',
-      // filename: 'index.html'
     })
   ],
   
@@ -51,8 +49,6 @@ const config = {
       //serves files structure from here, gives proper HTML
       contentBase: APP_DIR,
       port: DEV_SERVER_PORT,
-      // inline: true,
-      // historyApiFallback: true
     }
 }
 

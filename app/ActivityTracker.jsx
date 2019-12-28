@@ -5,8 +5,17 @@ import { connect } from 'react-redux'
 import Activity from './Activity.jsx'
 
 const elStyle = {
-  display: "inline-block"
+  display: "inline-block",
+  padding: '2.5%',
+  height: "50px",
+  width: "20%"
 }
+
+const containerStyle = {
+  width: "66%",
+  margin: "0 auto"
+}
+
 class ActivityTracker extends Component {
   constructor (props) {
     super(props)
@@ -68,7 +77,7 @@ class ActivityTracker extends Component {
     const { description, startTime } = this.state
     const { activities } = this.props
     return (
-      <div>
+      <div style={containerStyle}>
         <form onSubmit={this.handleSubmit}>
           <div >
             <div style={elStyle}>
@@ -84,6 +93,8 @@ class ActivityTracker extends Component {
                   onChange={this.handleChange}
                 />
               </div>
+            </div>
+            <div style={elStyle}>
             </div>
             <div style={elStyle}>
               <input 

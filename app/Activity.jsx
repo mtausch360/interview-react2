@@ -1,7 +1,10 @@
 import React, { Component } from 'react'
 
 const elStyle = {
-  display: "inline-block"
+  display: "inline-block",
+  padding: '2.5%',
+  height: "50px",
+  width: "20%"
 }
 
 export default class Activity extends Component {
@@ -46,7 +49,7 @@ export default class Activity extends Component {
 
         {
           isRunning &&
-            <div>
+            <div style={elStyle}>
               <input type="submit" value="Stop Activity" onClick={this.props.endActivity}/>
             </div>
         }

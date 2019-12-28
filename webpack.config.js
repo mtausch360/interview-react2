@@ -49,6 +49,7 @@ const config = {
       //serves files structure from here, gives proper HTML
       contentBase: APP_DIR,
       port: DEV_SERVER_PORT,
+
     }
 }
 

@@ -21,7 +21,7 @@ function startActivity(state, action) {
   const newState = Object.assign({}, state, {
     activities: activities.concat([{ id, description, startTime, endTime: null }])
   })
-  setSessionStorage(state)
+  setSessionStorage(newState)
   return newState
 }
 
@@ -35,14 +35,16 @@ function endActivity(state, action) {
   newActivities[activityIndex] = newActivity
 
   const newState = Object.assign({}, state, { activities: newActivities })
-  setSessionStorage(state)
+  setSessionStorage(newState)
   return newState
 }
 
 function initializeState () {
-  return {
+  const state = {
     activities: []
   }
+  setSessionStorage(state)
+  return state
 }
 
 function setSessionStorage (state) {

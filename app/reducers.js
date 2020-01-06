@@ -29,7 +29,7 @@ function endActivity(state, action) {
   const { id, endTime } = action
   const { activities } = state
   const activityIndex = activities.findIndex((a) => a.id === id)
-  const newActivity = Object.assign({}, activities[activityIndex], { endTime: new Date() })
+  const newActivity = Object.assign({}, activities[activityIndex], { endTime })
 
   const newActivities = activities.slice()
   newActivities[activityIndex] = newActivity
